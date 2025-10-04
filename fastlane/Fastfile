@@ -27,7 +27,7 @@ platform :ios do
       scheme: "CI_Example",
       clean: true, 
       parallel_testing: false,
-      concurrent_workers=4
+      concurrent_workers: 4
     )
   end
 

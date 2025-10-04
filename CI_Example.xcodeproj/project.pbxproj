@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		AA4E15102E91B39D00FD3916 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA4E14E82E91AE9300FD3916 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA4E14EF2E91AE9300FD3916;
+			remoteInfo = CI_Example;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		AA4E14F02E91AE9300FD3916 /* CI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA4E150C2E91B39D00FD3916 /* CI_ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CI_ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -29,10 +40,22 @@
 			path = CI_Example;
 			sourceTree = "<group>";
 		};
+		AA4E150D2E91B39D00FD3916 /* CI_ExampleTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CI_ExampleTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AA4E14ED2E91AE9300FD3916 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4E15092E91B39D00FD3916 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				AA4E14F22E91AE9300FD3916 /* CI_Example */,
+				AA4E150D2E91B39D00FD3916 /* CI_ExampleTests */,
 				AA4E14F12E91AE9300FD3916 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				AA4E14F02E91AE9300FD3916 /* CI_Example.app */,
+				AA4E150C2E91B39D00FD3916 /* CI_ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +108,29 @@
 			productReference = AA4E14F02E91AE9300FD3916 /* CI_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AA4E150B2E91B39D00FD3916 /* CI_ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA4E15122E91B39D00FD3916 /* Build configuration list for PBXNativeTarget "CI_ExampleTests" */;
+			buildPhases = (
+				AA4E15082E91B39D00FD3916 /* Sources */,
+				AA4E15092E91B39D00FD3916 /* Frameworks */,
+				AA4E150A2E91B39D00FD3916 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA4E15112E91B39D00FD3916 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AA4E150D2E91B39D00FD3916 /* CI_ExampleTests */,
+			);
+			name = CI_ExampleTests;
+			packageProductDependencies = (
+			);
+			productName = CI_ExampleTests;
+			productReference = AA4E150C2E91B39D00FD3916 /* CI_ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +143,10 @@
 				TargetAttributes = {
 					AA4E14EF2E91AE9300FD3916 = {
 						CreatedOnToolsVersion = 16.3;
+					};
+					AA4E150B2E91B39D00FD3916 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = AA4E14EF2E91AE9300FD3916;
 					};
 				};
 			};
@@ -113,12 +165,20 @@
 			projectRoot = "";
 			targets = (
 				AA4E14EF2E91AE9300FD3916 /* CI_Example */,
+				AA4E150B2E91B39D00FD3916 /* CI_ExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AA4E14EE2E91AE9300FD3916 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA4E150A2E91B39D00FD3916 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +195,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AA4E15082E91B39D00FD3916 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA4E15112E91B39D00FD3916 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA4E14EF2E91AE9300FD3916 /* CI_Example */;
+			targetProxy = AA4E15102E91B39D00FD3916 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AA4E15042E91AE9600FD3916 /* Debug */ = {
@@ -313,6 +388,42 @@
 			};
 			name = Release;
 		};
+		AA4E15132E91B39D00FD3916 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XQ5MGT6276;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mrdr.CI-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CI_Example.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CI_Example";
+			};
+			name = Debug;
+		};
+		AA4E15142E91B39D00FD3916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XQ5MGT6276;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mrdr.CI-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CI_Example.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CI_Example";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -330,6 +441,15 @@
 			buildConfigurations = (
 				AA4E15042E91AE9600FD3916 /* Debug */,
 				AA4E15052E91AE9600FD3916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA4E15122E91B39D00FD3916 /* Build configuration list for PBXNativeTarget "CI_ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA4E15132E91B39D00FD3916 /* Debug */,
+				AA4E15142E91B39D00FD3916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
